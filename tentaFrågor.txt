@@ -1,0 +1,129 @@
+Uppgift 1 – Kakor i påsar
+
+En hobbybagare bakar kakor och lägger dem i påsar. Varje påse rymmer ett visst antal kakor. För att kunna ställa undan påsarna måste alla påsar vara helt fyllda.
+
+Skriv ett program som:
+
+    Läser in hur många kakor som har bakats från användaren
+
+    Läser in hur många kakor som får plats i varje påse
+
+    Skriver ut hur många kakor till som måste bakas för att fylla alla påbörjade påsar helt
+
+Programmet ska använda input() och print() och följa exakt det angivna utskriftsformatet.
+
+    OBS: Du behöver inte hantera felaktig indata.
+
+Exempelkörning 1
+
+Input (användaren skriver):
+
+Antal bakade kakor: 14
+Antal kakor per påse: 5
+
+Output:
+
+Antal kakor kvar att baka: 1
+
+
+
+
+Uppgift 2 – Från pascal-case till PascalCase
+
+I vissa programmeringsspråk används en stil som kallas pascal-case (med bindestreck) där variabelnamn skrivs som flera ord separerade av bindestreck (-) och varje ord börjar med stor bokstav, t.ex. Antal-Element. I denna uppgift ska du skriva en funktion som konverterar sådana variabelnamn till PascalCase – alltså utan bindestreck, men med samma versalisering.
+
+
+
+Uppgift 3 – Tal över medelvärdet
+
+Du har en lista med heltal och ska skriva en funktion som:
+
+    Beräknar medelvärdet (genomsnittet) av alla tal i listan
+
+    Returnerar antalet tal i listan som är större än medelvärdet
+
+Funktionsdefinition:
+
+def antal_over_medel(lista):
+    # Din kod här
+
+Funktionen ska:
+
+    Ta emot en lista av heltal
+
+    Returnera ett heltal – antalet element som är strikt större än medelvärdet
+
+    Obs: Medelvärdet ska beräknas som ett flyttal, men jämförelsen görs utan avrundning.
+
+Exempel 1:
+
+antal_over_medel([1, 2, 3, 4, 5])
+
+Returnerar:
+
+2
+
+Förklaring: Medelvärdet är 3.0. Talen 4 och 5 är större än 3.0 → 2 st.
+Exempel 2:
+
+antal_over_medel([10, 10, 10, 10])
+
+Returnerar:
+
+0
+
+Förklaring: Medelvärdet är 10.0. Inga tal är större än 10.0.
+
+
+
+Uppgift 4 – Begränsa värden inom intervall
+
+Du ska skriva en funktion som justerar en lista av heltal så att alla tal ligger inom ett visst intervall. Alla tal som är:
+
+    högre än ett givet maxvärde (hög) ska ersättas med hög
+
+    lägre än ett givet minvärde (låg) ska ersättas med låg
+
+    inom intervallet behålls som de är
+
+Funktionsdefinition:
+
+def fråga(värden, hög, låg):
+    # Din kod här
+
+Funktionen ska:
+
+    Ta emot en lista värden (heltal), ett hög-värde och ett låg-värde
+
+    Returnera en ny lista där varje tal justerats enligt reglerna ovan
+
+Exempel 1:
+
+fråga([3, 12, 7, -5, 9], hög=10, låg=0)
+
+Returnerar:
+
+[3, 10, 7, 0, 9]
+
+Förklaring:
+
+    12 är större än hög (10) → ersätts med 10
+
+    -5 är mindre än låg (0) → ersätts med 0
+
+    Övriga tal är inom intervallet 0–10 → behålls
+
+
+Uppgift 5 – Ersätt konsonanter med asterisk
+
+Skriv ett program eller en funktion som tar en sträng som indata och ersätter alla konsonanter i strängen med tecknet *. Vokaler (a, e, i, o, u, y) och andra tecken (som mellanslag, siffror och skiljetecken) ska lämnas orörda.
+
+Exempel:
+
+Input:
+
+Python är kul!
+
+Output:
+
+*yt**n är *u*!
